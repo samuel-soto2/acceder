@@ -34,6 +34,8 @@
             pictureBox1 = new PictureBox();
             user = new TextBox();
             pass = new TextBox();
+            muestra = new CheckBox();
+            entrar = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -95,12 +97,41 @@
             pass.Text = "ingrese su contraseña";
             pass.TextAlign = HorizontalAlignment.Center;
             // 
+            // muestra
+            // 
+            muestra.AutoSize = true;
+            muestra.Font = new Font("Yu Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            muestra.Location = new Point(274, 319);
+            muestra.Name = "muestra";
+            muestra.Size = new Size(69, 20);
+            muestra.TabIndex = 4;
+            muestra.Text = "Mostrar";
+            muestra.UseVisualStyleBackColor = true;
+            // 
+            // entrar
+            // 
+            entrar.BackColor = Color.Aqua;
+            entrar.FlatAppearance.BorderColor = Color.Blue;
+            entrar.FlatAppearance.BorderSize = 0;
+            entrar.FlatAppearance.MouseDownBackColor = Color.Blue;
+            entrar.FlatAppearance.MouseOverBackColor = Color.Blue;
+            entrar.FlatStyle = FlatStyle.Flat;
+            entrar.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            entrar.Location = new Point(166, 372);
+            entrar.Name = "entrar";
+            entrar.Size = new Size(98, 36);
+            entrar.TabIndex = 5;
+            entrar.Text = "Entrar";
+            entrar.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(422, 493);
+            ClientSize = new Size(422, 540);
+            Controls.Add(entrar);
+            Controls.Add(muestra);
             Controls.Add(pass);
             Controls.Add(user);
             Controls.Add(pictureBox1);
@@ -121,5 +152,7 @@
         private PictureBox pictureBox1;
         private TextBox user;
         private TextBox pass;
+        private CheckBox muestra;
+        private Button entrar;
     }
 }
