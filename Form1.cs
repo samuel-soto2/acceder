@@ -81,5 +81,27 @@ namespace acceso
                 pass.UseSystemPasswordChar = true;
             }
         }
+        private void muestra_CheckedChanged(object sender, EventArgs e)
+        {
+            if (muestra.Checked == true)
+            {
+                pass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                pass.UseSystemPasswordChar = true;
+            }
+        }
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Registro r = new Registro();
+            r.Show();
+            this.Hide();
+        }
     }
 }
