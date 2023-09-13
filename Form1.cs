@@ -42,5 +42,44 @@ namespace acceso
 
 
     }
+        private void user_Leave(object sender, EventArgs e)
+        {
+            if (user.Text == "")
+            {
+                user.Text = "Ingrese su usuario";
+                user.ForeColor = Color.Black;
+            }
+        }
+
+        private void user_Enter(object sender, EventArgs e)
+        {
+            if (user.Text == "Ingrese su usuario")
+            {
+                user.Text = "";
+                user.ForeColor = Color.Black;
+            }
+
+        }
+
+        private void pass_Leave(object sender, EventArgs e)
+        {
+            if (pass.Text == "")
+            {
+                pass.Text = "Ingrese su contraseña";
+                pass.ForeColor = Color.Black;
+                pass.UseSystemPasswordChar = false;
+
+            }
+        }
+
+        private void pass_Enter(object sender, EventArgs e)
+        {
+            if (pass.Text == "Ingrese su contraseña")
+            {
+                pass.Text = "";
+                pass.ForeColor = Color.Black;
+                pass.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
