@@ -44,7 +44,11 @@ namespace acceso
             catch (MySqlException ex) { MessageBox.Show("Error " + ex.ToString()); }
 
         }
+        private void Cerrar2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-    }
+    
     }
 }
