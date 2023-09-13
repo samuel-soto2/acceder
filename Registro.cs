@@ -16,5 +16,10 @@ namespace acceso
         {
             InitializeComponent();
         }
+
+        private void guardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

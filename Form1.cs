@@ -26,7 +26,21 @@ namespace acceso
                 MessageBox.Show("Eror" + ex.ToString());
                 throw;
             }
+            string sql = "select user,pass from users where user = '" + nombre + "' AND pass = '" + contraseña + "' ";
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MySqlDataReader read = cmd.ExecuteReader();
 
-        }
+            if (read.Read())
+            {
+                this.Hide();
+                MessageBox.Show("Bienvenido" + nombre);
+            }
+            else
+            {
+                MessageBox.Show("No existe este usuario " + nombre);
+            }
+
+
+    }
     }
 }

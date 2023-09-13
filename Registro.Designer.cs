@@ -101,6 +101,7 @@
             guardar.TabIndex = 3;
             guardar.Text = "Guardar";
             guardar.UseVisualStyleBackColor = false;
+            guardar.Click += guardar_Click;
             // 
             // label1
             // 
