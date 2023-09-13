@@ -51,6 +51,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(422, 39);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // cerrar
             // 
@@ -79,6 +80,7 @@
             // 
             // user
             // 
+            user.BackColor = SystemColors.Info;
             user.BorderStyle = BorderStyle.None;
             user.Font = new Font("Yu Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             user.Location = new Point(105, 203);
@@ -90,6 +92,7 @@
             // 
             // pass
             // 
+            pass.BackColor = SystemColors.Info;
             pass.BorderStyle = BorderStyle.None;
             pass.Font = new Font("Yu Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             pass.Location = new Point(105, 275);
@@ -119,12 +122,14 @@
             entrar.FlatAppearance.MouseOverBackColor = Color.Blue;
             entrar.FlatStyle = FlatStyle.Flat;
             entrar.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            entrar.ForeColor = Color.White;
             entrar.Location = new Point(166, 372);
             entrar.Name = "entrar";
             entrar.Size = new Size(98, 36);
             entrar.TabIndex = 5;
             entrar.Text = "Entrar";
             entrar.UseVisualStyleBackColor = false;
+            entrar.Click += entrar_Click;
             // 
             // label1
             // 

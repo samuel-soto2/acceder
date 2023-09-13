@@ -60,7 +60,7 @@
             cerrar2.Location = new Point(342, 3);
             cerrar2.Name = "cerrar2";
             cerrar2.Size = new Size(37, 30);
-            cerrar2.TabIndex = 0;
+            cerrar2.TabIndex = 1;
             cerrar2.UseVisualStyleBackColor = true;
             // 
             // n_user
@@ -94,6 +94,7 @@
             guardar.FlatAppearance.MouseOverBackColor = Color.White;
             guardar.FlatStyle = FlatStyle.Flat;
             guardar.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            guardar.ForeColor = Color.White;
             guardar.Location = new Point(141, 195);
             guardar.Name = "guardar";
             guardar.Size = new Size(90, 35);
